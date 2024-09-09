@@ -1,0 +1,780 @@
+{
+  "config": {
+    "configFile": "/Users/user/Desktop/playwright-framework-fixed/playwright.config.js",
+    "rootDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/user/Desktop/playwright-framework-fixed/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Desktop Chrome",
+        "name": "Desktop Chrome",
+        "testDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/user/Desktop/playwright-framework-fixed/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Desktop Firefox",
+        "name": "Desktop Firefox",
+        "testDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/user/Desktop/playwright-framework-fixed/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Desktop Safari",
+        "name": "Desktop Safari",
+        "testDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/user/Desktop/playwright-framework-fixed/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/user/Desktop/playwright-framework-fixed/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/user/Desktop/playwright-framework-fixed/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "loginPage.spec.js",
+      "file": "loginPage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page Tests",
+          "file": "loginPage.spec.js",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login an existing user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 33294,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 10,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 10,
+                            "line": 10
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:44:37.726Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:44:34.082Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-should-login-an-existing-user-Desktop-Chrome/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 10,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-65ee62478443e09f8db0",
+              "file": "loginPage.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "should display an error message for invalid login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 29202,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:12.521Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.321Z [INFO]: Starting login test for an invalid user\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.464Z [INFO]: Clicking button with selector: #login-button\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.556Z [INFO]: Waiting for selector: [data-test=\"error\"]\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.594Z [INFO]: Asserting text for selector [data-test=\"error\"]\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.595Z [INFO]: Assertion passed: Text is 'Epic sadface: Username and password do not match any user in this service'\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.595Z [INFO]: Invalid login test passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:10.894Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-3e54e-r-message-for-invalid-login-Desktop-Chrome/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-5a6e71834b59af16c451",
+              "file": "loginPage.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "should login an existing user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Firefox",
+                  "projectName": "Desktop Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 35051,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 10,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 10,
+                            "line": 10
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 20,
+                            "line": 13
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:44:38.954Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:44:34.079Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 10,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-fff454ac428045111f68",
+              "file": "loginPage.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "should display an error message for invalid login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Firefox",
+                  "projectName": "Desktop Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "status": "failed",
+                      "duration": 19736,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 20,
+                          "line": 13
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 20,
+                            "line": 13
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:17.100Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:14.275Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 20,
+                        "line": 13
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-3394b337ebc46e10bd23",
+              "file": "loginPage.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "should login an existing user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Safari",
+                  "projectName": "Desktop Safari",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "timedOut",
+                      "duration": 35035,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 10,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 10,
+                            "line": 10
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 20,
+                            "line": 13
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:44:36.132Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:44:34.080Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 10,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-417052bd9ee46acb8d27",
+              "file": "loginPage.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "should display an error message for invalid login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Safari",
+                  "projectName": "Desktop Safari",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 29593,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:11.607Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.002Z [INFO]: Starting login test for an invalid user\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.130Z [INFO]: Clicking button with selector: #login-button\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.247Z [INFO]: Waiting for selector: [data-test=\"error\"]\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.291Z [INFO]: Asserting text for selector [data-test=\"error\"]\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.291Z [INFO]: Assertion passed: Text is 'Epic sadface: Username and password do not match any user in this service'\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:40.291Z [INFO]: Invalid login test passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:10.532Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-3e54e-r-message-for-invalid-login-Desktop-Safari/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-0a3b655de1a230a12bca",
+              "file": "loginPage.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "should login an existing user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30961,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 10,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 10,
+                            "line": 10
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:44:37.728Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:44:34.077Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-should-login-an-existing-user-Mobile-Chrome/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 10,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-1a2f517999d0452cfe80",
+              "file": "loginPage.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "should display an error message for invalid login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "timedOut",
+                      "duration": 30823,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 10,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 10,
+                            "line": 10
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Page Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:10:10\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:09.598Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:08.049Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-3e54e-r-message-for-invalid-login-Mobile-Chrome/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 10,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-e5cefb2d9b23f6f19cc6",
+              "file": "loginPage.spec.js",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "should login an existing user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 12887,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:37.330Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.227Z [INFO]: Starting login test for an existing user\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.330Z [INFO]: Clicking button with selector: #login-button\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.432Z [INFO]: Waiting for selector: .inventory_list\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.452Z [INFO]: Asserting URL contains: /inventory.html\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.452Z [INFO]: Assertion passed: URL contains '/inventory.html'\n"
+                        },
+                        {
+                          "text": "2024-09-09T19:45:49.453Z [INFO]: Login test passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:36.460Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/user/Desktop/playwright-framework-fixed/test-results/loginPage-Login-Page-Tests-should-login-an-existing-user-Mobile-Safari/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-d67e41ce9b30895d38da",
+              "file": "loginPage.spec.js",
+              "line": 16,
+              "column": 5
+            },
+            {
+              "title": "should display an error message for invalid login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "interrupted",
+                      "duration": 10742,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20",
+                        "location": {
+                          "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                          "column": 20,
+                          "line": 13
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                            "column": 20,
+                            "line": 13
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[36mconst\u001b[39m baseUrl \u001b[33m=\u001b[39m data\u001b[33m.\u001b[39mbaseUrl\u001b[33m;\u001b[39m  \u001b[90m// Access the base URL from the test data file\u001b[39m\n \u001b[90m 12 |\u001b[39m         logger\u001b[33m.\u001b[39minfo(\u001b[32m`Navigating to ${baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(baseUrl)\u001b[33m;\u001b[39m  \u001b[90m// Navigate to the base URL\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m     test(\u001b[32m'should login an existing user'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js:13:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2024-09-09T19:45:49.875Z [INFO]: Navigating to https://www.saucedemo.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-09T19:45:49.583Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/user/Desktop/playwright-framework-fixed/tests/loginPage.spec.js",
+                        "column": 20,
+                        "line": 13
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6e7aa6f06a75e73c306a-96e1c75f98537fe75df5",
+              "file": "loginPage.spec.js",
+              "line": 29,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-09T19:44:33.310Z",
+    "duration": 87093.745,
+    "expected": 3,
+    "skipped": 1,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

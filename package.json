@@ -1,0 +1,12 @@
+{
+  "name": "saucedemo-playwright-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test:dev": "ENV=dev npx playwright test",
+    "test:uat": "ENV=uat npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.24.0",
+    "winston": "^3.3.3"
+  }
+}
