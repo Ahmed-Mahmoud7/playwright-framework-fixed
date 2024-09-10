@@ -26,7 +26,7 @@ module.exports = {
     ],
     workers: 4, // Allows parallel execution
     use: {
-        headless: false, // Enable headless mode for all browsers
+        headless: true, // Enable headless mode for all browsers
         screenshot: 'on', // Capture screenshots on both pass and fail
         video: 'on-first-retry' // Record video on the first retry of a failed test
     },
